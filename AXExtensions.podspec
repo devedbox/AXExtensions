@@ -90,7 +90,7 @@ s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag 
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "AXExtensions/AXExtensions/*.{h,m}"
+s.source_files  = "AXExtensions/AXExtensions/"
 #s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
