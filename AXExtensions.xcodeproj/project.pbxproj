@@ -13,6 +13,12 @@
 		01ABFFCF1BFF1A2400EEDF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01ABFFCD1BFF1A2400EEDF8C /* Main.storyboard */; };
 		01ABFFD11BFF1A2400EEDF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01ABFFD01BFF1A2400EEDF8C /* Assets.xcassets */; };
 		01ABFFD41BFF1A2400EEDF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01ABFFD21BFF1A2400EEDF8C /* LaunchScreen.storyboard */; };
+		01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFDE1BFF1AD000EEDF8C /* ALAsset+Image.m */; };
+		01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFE11BFF1AD000EEDF8C /* PHAsset+Image.m */; };
+		01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFE41BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m */; };
+		01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFE71BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m */; };
+		01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */; };
+		01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		01ABFFD01BFF1A2400EEDF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01ABFFD31BFF1A2400EEDF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01ABFFD51BFF1A2400EEDF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01ABFFDD1BFF1AD000EEDF8C /* ALAsset+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+Image.h"; sourceTree = "<group>"; };
+		01ABFFDE1BFF1AD000EEDF8C /* ALAsset+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+Image.m"; sourceTree = "<group>"; };
+		01ABFFE01BFF1AD000EEDF8C /* PHAsset+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+Image.h"; sourceTree = "<group>"; };
+		01ABFFE11BFF1AD000EEDF8C /* PHAsset+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+Image.m"; sourceTree = "<group>"; };
+		01ABFFE31BFF1AD000EEDF8C /* UIImagePickerController+Authorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+Authorization.h"; sourceTree = "<group>"; };
+		01ABFFE41BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+Authorization.m"; sourceTree = "<group>"; };
+		01ABFFE61BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Separator_hidden.h"; sourceTree = "<group>"; };
+		01ABFFE71BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Separator_hidden.m"; sourceTree = "<group>"; };
+		01ABFFE91BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+Separator_hidden.h"; sourceTree = "<group>"; };
+		01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+Separator_hidden.m"; sourceTree = "<group>"; };
+		01ABFFEC1BFF1AD000EEDF8C /* UIViewController+Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Title.h"; sourceTree = "<group>"; };
+		01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Title.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 				01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */,
 				01ABFFCA1BFF1A2400EEDF8C /* ViewController.h */,
 				01ABFFCB1BFF1A2400EEDF8C /* ViewController.m */,
+				01ABFFDB1BFF1AD000EEDF8C /* AXExtensions */,
 				01ABFFCD1BFF1A2400EEDF8C /* Main.storyboard */,
 				01ABFFD01BFF1A2400EEDF8C /* Assets.xcassets */,
 				01ABFFD21BFF1A2400EEDF8C /* LaunchScreen.storyboard */,
@@ -77,6 +96,73 @@
 				01ABFFC51BFF1A2400EEDF8C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01ABFFDB1BFF1AD000EEDF8C /* AXExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFDC1BFF1AD000EEDF8C /* ALAsset+Image */,
+				01ABFFDF1BFF1AD000EEDF8C /* PHAsset+Image */,
+				01ABFFE21BFF1AD000EEDF8C /* UIImagePickerController+Authorization */,
+				01ABFFE51BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden */,
+				01ABFFE81BFF1AD000EEDF8C /* UIToolbar+Separator_hidden */,
+				01ABFFEB1BFF1AD000EEDF8C /* UIViewController+Title */,
+			);
+			path = AXExtensions;
+			sourceTree = "<group>";
+		};
+		01ABFFDC1BFF1AD000EEDF8C /* ALAsset+Image */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFDD1BFF1AD000EEDF8C /* ALAsset+Image.h */,
+				01ABFFDE1BFF1AD000EEDF8C /* ALAsset+Image.m */,
+			);
+			path = "ALAsset+Image";
+			sourceTree = "<group>";
+		};
+		01ABFFDF1BFF1AD000EEDF8C /* PHAsset+Image */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFE01BFF1AD000EEDF8C /* PHAsset+Image.h */,
+				01ABFFE11BFF1AD000EEDF8C /* PHAsset+Image.m */,
+			);
+			path = "PHAsset+Image";
+			sourceTree = "<group>";
+		};
+		01ABFFE21BFF1AD000EEDF8C /* UIImagePickerController+Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFE31BFF1AD000EEDF8C /* UIImagePickerController+Authorization.h */,
+				01ABFFE41BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m */,
+			);
+			path = "UIImagePickerController+Authorization";
+			sourceTree = "<group>";
+		};
+		01ABFFE51BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFE61BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.h */,
+				01ABFFE71BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m */,
+			);
+			path = "UINavigationBar+Separator_hidden";
+			sourceTree = "<group>";
+		};
+		01ABFFE81BFF1AD000EEDF8C /* UIToolbar+Separator_hidden */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFE91BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.h */,
+				01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */,
+			);
+			path = "UIToolbar+Separator_hidden";
+			sourceTree = "<group>";
+		};
+		01ABFFEB1BFF1AD000EEDF8C /* UIViewController+Title */ = {
+			isa = PBXGroup;
+			children = (
+				01ABFFEC1BFF1AD000EEDF8C /* UIViewController+Title.h */,
+				01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */,
+			);
+			path = "UIViewController+Title";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01ABFFCC1BFF1A2400EEDF8C /* ViewController.m in Sources */,
+				01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */,
+				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
+				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
 				01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */,
+				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
+				01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */,
+				01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
