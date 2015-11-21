@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "AXExtensions"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "A extensions framework in iOS."
 
 s.description  = <<-DESC
@@ -79,7 +79,7 @@ s.platform     = :ios, "7.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag => "1.0.0" }
+s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag => "1.0.1" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
