@@ -23,7 +23,10 @@
 #pragma mark - Public
 - (void)setTitle:(NSString *)title color:(UIColor *)color font:(UIFont *)font {
     [self setTitle:title];
-    if (color) self.titleView.titleLabel.textColor = color;
+    if (color) {
+        self.titleView.titleLabel.textColor = color;
+        self.titleView.activityIndicator.color = color;
+    }
     if (font) self.titleView.titleLabel.font = font;
     self.titleView.titleLabel.text = [self title];
     [self.titleView sizeToFit];

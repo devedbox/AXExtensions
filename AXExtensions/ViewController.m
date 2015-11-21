@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+Title.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self setTitle:@"ViewController" color:nil font:nil];
+    [self.titleView.activityIndicator startAnimating];
 }
 
 - (void)didReceiveMemoryWarning {
