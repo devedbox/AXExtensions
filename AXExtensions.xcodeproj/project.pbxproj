@@ -19,6 +19,7 @@
 		01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFE71BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m */; };
 		01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */; };
 		01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */; };
+		01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C0C5EB1C02FDEE00E0BF99 /* UIImage+TintColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+Separator_hidden.m"; sourceTree = "<group>"; };
 		01ABFFEC1BFF1AD000EEDF8C /* UIViewController+Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Title.h"; sourceTree = "<group>"; };
 		01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Title.m"; sourceTree = "<group>"; };
+		01C0C5EA1C02FDEE00E0BF99 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+TintColor.h"; path = "UIImage+TintColor/UIImage+TintColor.h"; sourceTree = "<group>"; };
+		01C0C5EB1C02FDEE00E0BF99 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TintColor.m"; path = "UIImage+TintColor/UIImage+TintColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 				01ABFFE51BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden */,
 				01ABFFE81BFF1AD000EEDF8C /* UIToolbar+Separator_hidden */,
 				01ABFFEB1BFF1AD000EEDF8C /* UIViewController+Title */,
+				01C0C5ED1C02FDF300E0BF99 /* UIImage+TintColor */,
 			);
 			path = AXExtensions;
 			sourceTree = "<group>";
@@ -163,6 +167,15 @@
 				01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */,
 			);
 			path = "UIViewController+Title";
+			sourceTree = "<group>";
+		};
+		01C0C5ED1C02FDF300E0BF99 /* UIImage+TintColor */ = {
+			isa = PBXGroup;
+			children = (
+				01C0C5EA1C02FDEE00E0BF99 /* UIImage+TintColor.h */,
+				01C0C5EB1C02FDEE00E0BF99 /* UIImage+TintColor.m */,
+			);
+			name = "UIImage+TintColor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +252,7 @@
 				01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */,
 				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
+				01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */,
 				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
 				01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */,
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
@@ -390,6 +404,7 @@
 				01ABFFDA1BFF1A2400EEDF8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
