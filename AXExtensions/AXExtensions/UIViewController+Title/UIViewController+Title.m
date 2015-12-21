@@ -65,7 +65,18 @@
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleLabel]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
 }
 
+#pragma mark - Override
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
+    if (newSuperview) {
+        CGSize size = [_titleLabel.text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, _titleLabel.font.pointSize) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:_titleLabel.font} context:nil].size;
+        CGRect rect = CGRectMake(0, 0, (_titleLabel.font.pointSize+10)*2+ceil(size.width), _titleLabel.font.pointSize);
+        self.frame = rect;
+    }
+}
+
 #pragma mark - Getters
+
 - (UIActivityIndicatorView *)activityIndicator {
     if (_activityIndicator) return _activityIndicator;
     _activityIndicator                  = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
