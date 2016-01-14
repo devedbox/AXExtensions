@@ -60,18 +60,14 @@
     self.backgroundColor   = [UIColor clearColor];
     [self addSubview:self.activityIndicator];
     [self addSubview:self.titleLabel];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_activityIndicator(size)]-10-[_titleLabel]-rightMargin-|" options:0 metrics:@{@"size":@(_titleLabel.font.pointSize),@"rightMargin":@(_titleLabel.font.pointSize+10)} views:NSDictionaryOfVariableBindings(_activityIndicator, _titleLabel)]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_activityIndicator(size)]|" options:0 metrics:@{@"size":@(_titleLabel.font.pointSize)} views:NSDictionaryOfVariableBindings(_activityIndicator)]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleLabel]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
+    [_titleLabel addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
 #pragma mark - Override
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
     if (newSuperview) {
-        CGSize size = [_titleLabel.text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, _titleLabel.font.pointSize) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:_titleLabel.font} context:nil].size;
-        CGRect rect = CGRectMake(0, 0, (_titleLabel.font.pointSize+10)*2+ceil(size.width), _titleLabel.font.pointSize);
-        self.frame = rect;
+        [self updatePositions];
     }
 }
 
@@ -80,23 +76,41 @@
 - (UIActivityIndicatorView *)activityIndicator {
     if (_activityIndicator) return _activityIndicator;
     _activityIndicator                  = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    _activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
     _activityIndicator.color            = [UIColor colorWithRed:0.100f green:0.100f blue:0.100f alpha:0.800f];
     _activityIndicator.hidesWhenStopped = YES;
     return _activityIndicator;
 }
 - (UILabel *)titleLabel {
     if (_titleLabel) return _titleLabel;
-    _titleLabel                 = [UILabel new];
-    _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    _titleLabel                 = [[UILabel alloc] initWithFrame:CGRectZero];
     _titleLabel.font            = [UIFont boldSystemFontOfSize:20.f];
     _titleLabel.textColor       = [UIColor colorWithRed:0.100f green:0.100f blue:0.100f alpha:0.800f];
     _titleLabel.backgroundColor = [UIColor clearColor];
-    _titleLabel.textAlignment   = NSTextAlignmentCenter;
+    _titleLabel.textAlignment   = NSTextAlignmentLeft;
     _titleLabel.numberOfLines   = 1;
     _titleLabel.lineBreakMode   = NSLineBreakByTruncatingTail;
-    [_titleLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-    [_titleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     return _titleLabel;
+}
+
+#pragma mark - Private
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"text"]) {
+        [self updatePositions];
+    }
+}
+
+- (void)updatePositions {
+    [_titleLabel sizeToFit];
+    
+    CGRect rect_acti = _activityIndicator.frame;
+    CGRect rect_label = _titleLabel.frame;
+    
+    rect_acti.size = CGSizeMake(CGRectGetHeight(rect_label), CGRectGetHeight(rect_label));
+    rect_label.origin.x = CGRectGetMaxX(rect_acti)+10;
+    rect_label.size.width += CGRectGetWidth(rect_acti)+10;
+    
+    _activityIndicator.frame = rect_acti;
+    _titleLabel.frame = rect_label;
+    self.frame = CGRectMake(0, 0, rect_label.origin.x+rect_label.size.width, rect_label.size.height);
 }
 @end
