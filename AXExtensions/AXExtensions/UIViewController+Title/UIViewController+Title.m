@@ -34,6 +34,9 @@
 @end
 
 @implementation AXTitleView
+
+@synthesize titleLabel = _titleLabel;
+
 #pragma mark - Life cycle
 - (instancetype)init {
     if (self = [super init]) {
@@ -60,11 +63,6 @@
     self.backgroundColor   = [UIColor clearColor];
     [self addSubview:self.activityIndicator];
     [self addSubview:self.titleLabel];
-    [_titleLabel addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:NULL];
-}
-
-- (void)dealloc {
-    [_titleLabel removeObserver:self forKeyPath:@"text"];
 }
 
 #pragma mark - Override
@@ -96,12 +94,14 @@
     return _titleLabel;
 }
 
-#pragma mark - Private
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"text"]) {
-        [self updatePositions];
-    }
+#pragma mark - Setters
+- (void)setTitle:(NSString *)title {
+    _title = [title copy];
+    _titleLabel.text = title;
+    [self updatePositions];
 }
+
+#pragma mark - Private
 
 - (void)updatePositions {
     [_titleLabel sizeToFit];
