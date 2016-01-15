@@ -63,6 +63,10 @@
     [_titleLabel addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:NULL];
 }
 
+- (void)dealloc {
+    [_titleLabel removeObserver:self forKeyPath:@"text"];
+}
+
 #pragma mark - Override
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
