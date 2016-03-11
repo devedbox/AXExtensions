@@ -20,6 +20,10 @@
 		01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFEA1BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m */; };
 		01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */; };
 		01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C0C5EB1C02FDEE00E0BF99 /* UIImage+TintColor.m */; };
+		01C6B7401C926CDB00320764 /* AXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B73F1C926CDB00320764 /* AXTableView.m */; };
+		01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7431C926F9600320764 /* AXCollectionView.m */; };
+		01C6B7471C9270CF00320764 /* AXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7461C9270CF00320764 /* AXScrollView.m */; };
+		2AA3DDCAF9767E59C1870553 /* libPods-AXExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,15 @@
 		01ABFFED1BFF1AD000EEDF8C /* UIViewController+Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Title.m"; sourceTree = "<group>"; };
 		01C0C5EA1C02FDEE00E0BF99 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+TintColor.h"; path = "UIImage+TintColor/UIImage+TintColor.h"; sourceTree = "<group>"; };
 		01C0C5EB1C02FDEE00E0BF99 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TintColor.m"; path = "UIImage+TintColor/UIImage+TintColor.m"; sourceTree = "<group>"; };
+		01C6B73E1C926CDB00320764 /* AXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXTableView.h; path = ScrollView/AXTableView.h; sourceTree = "<group>"; };
+		01C6B73F1C926CDB00320764 /* AXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXTableView.m; path = ScrollView/AXTableView.m; sourceTree = "<group>"; };
+		01C6B7421C926F9600320764 /* AXCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXCollectionView.h; path = ScrollView/AXCollectionView.h; sourceTree = "<group>"; };
+		01C6B7431C926F9600320764 /* AXCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXCollectionView.m; path = ScrollView/AXCollectionView.m; sourceTree = "<group>"; };
+		01C6B7451C9270CF00320764 /* AXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXScrollView.h; path = ScrollView/AXScrollView.h; sourceTree = "<group>"; };
+		01C6B7461C9270CF00320764 /* AXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXScrollView.m; path = ScrollView/AXScrollView.m; sourceTree = "<group>"; };
+		8AF76FC482D1E9A8951B424A /* Pods-AXExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		9924344873C8080B39BDDC00 /* Pods-AXExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.debug.xcconfig"; sourceTree = "<group>"; };
+		B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA3DDCAF9767E59C1870553 /* libPods-AXExtensions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,8 @@
 			children = (
 				01ABFFC31BFF1A2400EEDF8C /* AXExtensions */,
 				01ABFFC21BFF1A2400EEDF8C /* Products */,
+				30481B119734D566C1077637 /* Pods */,
+				4CAE509B009D1906CB74F7E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +127,7 @@
 				01ABFFE81BFF1AD000EEDF8C /* UIToolbar+Separator_hidden */,
 				01ABFFEB1BFF1AD000EEDF8C /* UIViewController+Title */,
 				01C0C5ED1C02FDF300E0BF99 /* UIImage+TintColor */,
+				01C6B7411C926CE400320764 /* ScrollView */,
 			);
 			path = AXExtensions;
 			sourceTree = "<group>";
@@ -178,6 +195,36 @@
 			name = "UIImage+TintColor";
 			sourceTree = "<group>";
 		};
+		01C6B7411C926CE400320764 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				01C6B73E1C926CDB00320764 /* AXTableView.h */,
+				01C6B73F1C926CDB00320764 /* AXTableView.m */,
+				01C6B7451C9270CF00320764 /* AXScrollView.h */,
+				01C6B7461C9270CF00320764 /* AXScrollView.m */,
+				01C6B7421C926F9600320764 /* AXCollectionView.h */,
+				01C6B7431C926F9600320764 /* AXCollectionView.m */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		30481B119734D566C1077637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9924344873C8080B39BDDC00 /* Pods-AXExtensions.debug.xcconfig */,
+				8AF76FC482D1E9A8951B424A /* Pods-AXExtensions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CAE509B009D1906CB74F7E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01ABFFD81BFF1A2400EEDF8C /* Build configuration list for PBXNativeTarget "AXExtensions" */;
 			buildPhases = (
+				F45AC48A9977A60343878EB3 /* Check Pods Manifest.lock */,
 				01ABFFBD1BFF1A2400EEDF8C /* Sources */,
 				01ABFFBE1BFF1A2400EEDF8C /* Frameworks */,
 				01ABFFBF1BFF1A2400EEDF8C /* Resources */,
+				35D018D655FAC4ABB022BCA8 /* Embed Pods Frameworks */,
+				AE3AF9F9B2D3C1243B97EA70 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,19 +293,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35D018D655FAC4ABB022BCA8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3AF9F9B2D3C1243B97EA70 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45AC48A9977A60343878EB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01ABFFBD1BFF1A2400EEDF8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				01ABFFCC1BFF1A2400EEDF8C /* ViewController.m in Sources */,
+				01C6B7471C9270CF00320764 /* AXScrollView.m in Sources */,
 				01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */,
 				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
+				01C6B7401C926CDB00320764 /* AXTableView.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
 				01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */,
 				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
 				01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */,
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
+				01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */,
 				01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */,
 				01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */,
 			);
@@ -365,6 +466,7 @@
 		};
 		01ABFFD91BFF1A2400EEDF8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9924344873C8080B39BDDC00 /* Pods-AXExtensions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AXExtensions/Info.plist;
@@ -376,6 +478,7 @@
 		};
 		01ABFFDA1BFF1A2400EEDF8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF76FC482D1E9A8951B424A /* Pods-AXExtensions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AXExtensions/Info.plist;
