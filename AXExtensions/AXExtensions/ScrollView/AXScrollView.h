@@ -33,3 +33,16 @@
 /// End footer refreshing.
 - (void)endRefreshFooter;
 @end
+
+@interface UIScrollView (PlaceHolder)
+/// Place hodler string content.
+@property(copy, nonatomic) IBInspectable NSString *placeHolderContent;
+/// Place holder label font. Default is system 26pt.
+@property(strong, nonatomic) IBInspectable UIFont *placeHolderFont;
+/// Place holder label text color. Default is light gray color.
+@property(strong, nonatomic) IBInspectable UIColor *placeHolderTextColor;
+/// Place hodler image.
+@property(strong, nonatomic) IBInspectable UIImage *placeHolderImage;
+/// Offset of place holder content. Default is (0, 0).
+@property(assign, nonatomic) IBInspectable CGPoint placeHolderOffset;
+@end

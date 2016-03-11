@@ -23,6 +23,8 @@
 		01C6B7401C926CDB00320764 /* AXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B73F1C926CDB00320764 /* AXTableView.m */; };
 		01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7431C926F9600320764 /* AXCollectionView.m */; };
 		01C6B7471C9270CF00320764 /* AXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7461C9270CF00320764 /* AXScrollView.m */; };
+		01C6B74A1C92A69800320764 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7491C92A69800320764 /* TableViewController.m */; };
+		01C6B74E1C92B37600320764 /* StringPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B74D1C92B37600320764 /* StringPlaceholderViewController.m */; };
 		2AA3DDCAF9767E59C1870553 /* libPods-AXExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,10 @@
 		01C6B7431C926F9600320764 /* AXCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXCollectionView.m; path = ScrollView/AXCollectionView.m; sourceTree = "<group>"; };
 		01C6B7451C9270CF00320764 /* AXScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXScrollView.h; path = ScrollView/AXScrollView.h; sourceTree = "<group>"; };
 		01C6B7461C9270CF00320764 /* AXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXScrollView.m; path = ScrollView/AXScrollView.m; sourceTree = "<group>"; };
+		01C6B7481C92A69800320764 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = TableViewController/TableViewController.h; sourceTree = "<group>"; };
+		01C6B7491C92A69800320764 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = TableViewController/TableViewController.m; sourceTree = "<group>"; };
+		01C6B74C1C92B37600320764 /* StringPlaceholderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringPlaceholderViewController.h; path = TableViewController/StringPlaceholderViewController.h; sourceTree = "<group>"; };
+		01C6B74D1C92B37600320764 /* StringPlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringPlaceholderViewController.m; path = TableViewController/StringPlaceholderViewController.m; sourceTree = "<group>"; };
 		8AF76FC482D1E9A8951B424A /* Pods-AXExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		9924344873C8080B39BDDC00 /* Pods-AXExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,7 @@
 				01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */,
 				01ABFFCA1BFF1A2400EEDF8C /* ViewController.h */,
 				01ABFFCB1BFF1A2400EEDF8C /* ViewController.m */,
+				01C6B74B1C92A69B00320764 /* TableViewController */,
 				01ABFFDB1BFF1AD000EEDF8C /* AXExtensions */,
 				01ABFFCD1BFF1A2400EEDF8C /* Main.storyboard */,
 				01ABFFD01BFF1A2400EEDF8C /* Assets.xcassets */,
@@ -206,6 +213,17 @@
 				01C6B7431C926F9600320764 /* AXCollectionView.m */,
 			);
 			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		01C6B74B1C92A69B00320764 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01C6B7481C92A69800320764 /* TableViewController.h */,
+				01C6B7491C92A69800320764 /* TableViewController.m */,
+				01C6B74C1C92B37600320764 /* StringPlaceholderViewController.h */,
+				01C6B74D1C92B37600320764 /* StringPlaceholderViewController.m */,
+			);
+			name = TableViewController;
 			sourceTree = "<group>";
 		};
 		30481B119734D566C1077637 /* Pods */ = {
@@ -351,6 +369,7 @@
 				01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */,
 				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
 				01C6B7401C926CDB00320764 /* AXTableView.m in Sources */,
+				01C6B74A1C92A69800320764 /* TableViewController.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
 				01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */,
 				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
@@ -358,6 +377,7 @@
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
 				01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */,
 				01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */,
+				01C6B74E1C92B37600320764 /* StringPlaceholderViewController.m in Sources */,
 				01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
