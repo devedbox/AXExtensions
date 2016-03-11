@@ -7,6 +7,7 @@
 //
 
 #import "AXScrollView.h"
+#import <objc/runtime.h>
 #import <MJRefresh/MJRefresh.h>
 
 @implementation AXScrollView

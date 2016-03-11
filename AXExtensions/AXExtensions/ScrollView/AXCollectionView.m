@@ -7,6 +7,7 @@
 //
 
 #import "AXCollectionView.h"
+#import <objc/runtime.h>
 #import <MJRefresh/MJRefresh.h>
 
 @implementation AXCollectionView
