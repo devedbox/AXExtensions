@@ -6,7 +6,7 @@
 //  Copyright © 2016年 AiXing. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AXScrollView.h"
 
 @class AXTableView;
 @protocol AXTableViewDelegate <NSObject>
@@ -32,17 +32,4 @@
 - (void)endRefreshHeader;
 /// End footer refreshing.
 - (void)endRefreshFooter;
-@end
-
-@interface UITableView (PlaceHolder)
-/// Place hodler string content.
-@property(copy, nonatomic) IBInspectable NSString *placeHolderContent;
-/// Place holder label font. Default is system 26pt.
-@property(strong, nonatomic) IBInspectable UIFont *placeHolderFont;
-/// Place holder label text color. Default is light gray color.
-@property(strong, nonatomic) IBInspectable UIColor *placeHolderTextColor;
-/// Place hodler image.
-@property(strong, nonatomic) IBInspectable UIImage *placeHolderImage;
-/// Offset of place holder content. Default is (0, 0).
-@property(assign, nonatomic) IBInspectable CGPoint placeHolderOffset;
 @end

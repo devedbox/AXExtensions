@@ -27,7 +27,7 @@
         <!--TableViewController-->
         <scene sceneID="DZx-Kh-vSC">
             <objects>
-                <tableViewController title="TableViewController" id="pW3-Ve-lMp" sceneMemberID="viewController">
+                <tableViewController title="TableViewController" hidesBottomBarWhenPushed="YES" id="pW3-Ve-lMp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="HQt-gC-2K3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HR7-xv-JNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-854" y="473"/>
+            <point key="canvasLocation" x="-588" y="41"/>
         </scene>
         <!--String-->
         <scene sceneID="xTZ-AX-Z3f">
@@ -208,7 +208,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcM-hH-QcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-707" y="1197"/>
+            <point key="canvasLocation" x="-901" y="751"/>
         </scene>
         <!--Item-->
         <scene sceneID="Cz4-BM-Gik">
