@@ -28,5 +28,6 @@
     [super viewDidAppear:animated];
     
 //    _tableView.placeHolderContent = @"No.";
+    _tableView.indicatorViewEnabled = YES;
 }
 @end
