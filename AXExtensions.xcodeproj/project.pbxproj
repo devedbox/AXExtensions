@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */; };
 		01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC51BFF1A2400EEDF8C /* main.m */; };
 		01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */; };
 		01ABFFCC1BFF1A2400EEDF8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFCB1BFF1A2400EEDF8C /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0189A1E11CE05F9D00D0F0D8 /* UILabel+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Pop.h"; path = "UILabel+Pop/UILabel+Pop.h"; sourceTree = "<group>"; };
+		0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Pop.m"; path = "UILabel+Pop/UILabel+Pop.m"; sourceTree = "<group>"; };
 		01ABFFC11BFF1A2400EEDF8C /* AXExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01ABFFC51BFF1A2400EEDF8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01ABFFC71BFF1A2400EEDF8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0189A1E41CE05FA100D0F0D8 /* UILabel+Pop */ = {
+			isa = PBXGroup;
+			children = (
+				0189A1E11CE05F9D00D0F0D8 /* UILabel+Pop.h */,
+				0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */,
+			);
+			name = "UILabel+Pop";
+			sourceTree = "<group>";
+		};
 		01ABFFB81BFF1A2400EEDF8C = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 				01C0C5ED1C02FDF300E0BF99 /* UIImage+TintColor */,
 				01C6B7411C926CE400320764 /* ScrollView */,
 				01E01FC51CCF5A0800529876 /* UIView+Extension */,
+				0189A1E41CE05FA100D0F0D8 /* UILabel+Pop */,
 			);
 			path = AXExtensions;
 			sourceTree = "<group>";
@@ -263,12 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01ABFFD81BFF1A2400EEDF8C /* Build configuration list for PBXNativeTarget "AXExtensions" */;
 			buildPhases = (
-				F45AC48A9977A60343878EB3 /* Check Pods Manifest.lock */,
+				F45AC48A9977A60343878EB3 /* 📦 Check Pods Manifest.lock */,
 				01ABFFBD1BFF1A2400EEDF8C /* Sources */,
 				01ABFFBE1BFF1A2400EEDF8C /* Frameworks */,
 				01ABFFBF1BFF1A2400EEDF8C /* Resources */,
-				35D018D655FAC4ABB022BCA8 /* Embed Pods Frameworks */,
-				AE3AF9F9B2D3C1243B97EA70 /* Copy Pods Resources */,
+				35D018D655FAC4ABB022BCA8 /* 📦 Embed Pods Frameworks */,
+				AE3AF9F9B2D3C1243B97EA70 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,14 +338,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35D018D655FAC4ABB022BCA8 /* Embed Pods Frameworks */ = {
+		35D018D655FAC4ABB022BCA8 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,14 +353,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE3AF9F9B2D3C1243B97EA70 /* Copy Pods Resources */ = {
+		AE3AF9F9B2D3C1243B97EA70 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,14 +368,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F45AC48A9977A60343878EB3 /* Check Pods Manifest.lock */ = {
+		F45AC48A9977A60343878EB3 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +396,7 @@
 				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
 				01C6B7401C926CDB00320764 /* AXTableView.m in Sources */,
 				01C6B74A1C92A69800320764 /* TableViewController.m in Sources */,
+				0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
 				01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */,
 				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
