@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011122FD1CE5BAB9005651D3 /* UITextView+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */; };
 		0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */; };
 		01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC51BFF1A2400EEDF8C /* main.m */; };
 		01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */; };
@@ -31,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011122FB1CE5BAB9005651D3 /* UITextView+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView+Pop.h"; path = "UITextView+Pop/UITextView+Pop.h"; sourceTree = "<group>"; };
+		011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Pop.m"; path = "UITextView+Pop/UITextView+Pop.m"; sourceTree = "<group>"; };
 		0189A1E11CE05F9D00D0F0D8 /* UILabel+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Pop.h"; path = "UILabel+Pop/UILabel+Pop.h"; sourceTree = "<group>"; };
 		0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Pop.m"; path = "UILabel+Pop/UILabel+Pop.m"; sourceTree = "<group>"; };
 		01ABFFC11BFF1A2400EEDF8C /* AXExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011122FE1CE5BABC005651D3 /* UITextView+Pop */ = {
+			isa = PBXGroup;
+			children = (
+				011122FB1CE5BAB9005651D3 /* UITextView+Pop.h */,
+				011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */,
+			);
+			name = "UITextView+Pop";
+			sourceTree = "<group>";
+		};
 		0189A1E41CE05FA100D0F0D8 /* UILabel+Pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 				01C6B7411C926CE400320764 /* ScrollView */,
 				01E01FC51CCF5A0800529876 /* UIView+Extension */,
 				0189A1E41CE05FA100D0F0D8 /* UILabel+Pop */,
+				011122FE1CE5BABC005651D3 /* UITextView+Pop */,
 			);
 			path = AXExtensions;
 			sourceTree = "<group>";
@@ -399,6 +412,7 @@
 				0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */,
 				01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */,
 				01C0C5EC1C02FDEE00E0BF99 /* UIImage+TintColor.m in Sources */,
+				011122FD1CE5BAB9005651D3 /* UITextView+Pop.m in Sources */,
 				01ABFFF31BFF1AD000EEDF8C /* UIViewController+Title.m in Sources */,
 				01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */,
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
