@@ -10,7 +10,7 @@
 #import <pop/POP.h>
 #import <objc/runtime.h>
 
-@implementation UITextField_Pop
+@implementation UITextField(Pop)
 - (CGFloat)speed {
     return [objc_getAssociatedObject(self, _cmd) floatValue];
 }

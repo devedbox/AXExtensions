@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITextField_Pop : UITextField
+@interface UITextField(Pop)
 /// Pop text animation speed per character. Default is 0.025. Pass a negative value to ignore.
 @property(assign, nonatomic) CGFloat speed UI_APPEARANCE_SELECTOR;
 /// Pop text animation total duration.
