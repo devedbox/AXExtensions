@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		011122FD1CE5BAB9005651D3 /* UITextView+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */; };
+		011123051CE5DA07005651D3 /* AXAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */; };
 		0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */; };
 		01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC51BFF1A2400EEDF8C /* main.m */; };
 		01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */; };
@@ -28,12 +29,15 @@
 		01C6B74A1C92A69800320764 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B7491C92A69800320764 /* TableViewController.m */; };
 		01C6B74E1C92B37600320764 /* StringPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6B74D1C92B37600320764 /* StringPlaceholderViewController.m */; };
 		01E01FC41CCF5A0400529876 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E01FC31CCF5A0400529876 /* UIView+Extension.m */; };
+		01F9E10B1CF8486D00B9E1AE /* UITextField+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F9E10A1CF8486D00B9E1AE /* UITextField+Pop.m */; };
 		2AA3DDCAF9767E59C1870553 /* libPods-AXExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		011122FB1CE5BAB9005651D3 /* UITextView+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView+Pop.h"; path = "UITextView+Pop/UITextView+Pop.h"; sourceTree = "<group>"; };
 		011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Pop.m"; path = "UITextView+Pop/UITextView+Pop.m"; sourceTree = "<group>"; };
+		011123031CE5DA07005651D3 /* AXAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXAttributedLabelViewController.h; sourceTree = "<group>"; };
+		011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXAttributedLabelViewController.m; sourceTree = "<group>"; };
 		0189A1E11CE05F9D00D0F0D8 /* UILabel+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Pop.h"; path = "UILabel+Pop/UILabel+Pop.h"; sourceTree = "<group>"; };
 		0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Pop.m"; path = "UILabel+Pop/UILabel+Pop.m"; sourceTree = "<group>"; };
 		01ABFFC11BFF1A2400EEDF8C /* AXExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +76,8 @@
 		01C6B74D1C92B37600320764 /* StringPlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringPlaceholderViewController.m; path = TableViewController/StringPlaceholderViewController.m; sourceTree = "<group>"; };
 		01E01FC21CCF5A0400529876 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "UIView+Extension/UIView+Extension.h"; sourceTree = "<group>"; };
 		01E01FC31CCF5A0400529876 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "UIView+Extension/UIView+Extension.m"; sourceTree = "<group>"; };
+		01F9E1091CF8486D00B9E1AE /* UITextField+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+Pop.h"; path = "UITextField+Pop/UITextField+Pop.h"; sourceTree = "<group>"; };
+		01F9E10A1CF8486D00B9E1AE /* UITextField+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Pop.m"; path = "UITextField+Pop/UITextField+Pop.m"; sourceTree = "<group>"; };
 		8AF76FC482D1E9A8951B424A /* Pods-AXExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		9924344873C8080B39BDDC00 /* Pods-AXExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXExtensions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXExtensions/Pods-AXExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		B17D84A957D6D23B97804BCF /* libPods-AXExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +138,8 @@
 				01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */,
 				01ABFFCA1BFF1A2400EEDF8C /* ViewController.h */,
 				01ABFFCB1BFF1A2400EEDF8C /* ViewController.m */,
+				011123031CE5DA07005651D3 /* AXAttributedLabelViewController.h */,
+				011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */,
 				01C6B74B1C92A69B00320764 /* TableViewController */,
 				01ABFFDB1BFF1AD000EEDF8C /* AXExtensions */,
 				01ABFFCD1BFF1A2400EEDF8C /* Main.storyboard */,
@@ -165,6 +173,7 @@
 				01E01FC51CCF5A0800529876 /* UIView+Extension */,
 				0189A1E41CE05FA100D0F0D8 /* UILabel+Pop */,
 				011122FE1CE5BABC005651D3 /* UITextView+Pop */,
+				01F9E10C1CF8487000B9E1AE /* UITextField+Pop */,
 			);
 			path = AXExtensions;
 			sourceTree = "<group>";
@@ -263,6 +272,15 @@
 				01E01FC31CCF5A0400529876 /* UIView+Extension.m */,
 			);
 			name = "UIView+Extension";
+			sourceTree = "<group>";
+		};
+		01F9E10C1CF8487000B9E1AE /* UITextField+Pop */ = {
+			isa = PBXGroup;
+			children = (
+				01F9E1091CF8486D00B9E1AE /* UITextField+Pop.h */,
+				01F9E10A1CF8486D00B9E1AE /* UITextField+Pop.m */,
+			);
+			name = "UITextField+Pop";
 			sourceTree = "<group>";
 		};
 		30481B119734D566C1077637 /* Pods */ = {
@@ -404,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01ABFFCC1BFF1A2400EEDF8C /* ViewController.m in Sources */,
+				01F9E10B1CF8486D00B9E1AE /* UITextField+Pop.m in Sources */,
 				01C6B7471C9270CF00320764 /* AXScrollView.m in Sources */,
 				01ABFFF01BFF1AD000EEDF8C /* UIImagePickerController+Authorization.m in Sources */,
 				01ABFFEE1BFF1AD000EEDF8C /* ALAsset+Image.m in Sources */,
@@ -418,6 +437,7 @@
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
 				01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */,
 				01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */,
+				011123051CE5DA07005651D3 /* AXAttributedLabelViewController.m in Sources */,
 				01C6B74E1C92B37600320764 /* StringPlaceholderViewController.m in Sources */,
 				01E01FC41CCF5A0400529876 /* UIView+Extension.m in Sources */,
 				01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */,

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "AXExtensions"
-s.version      = "1.2.9"
+s.version      = "1.2.10"
 s.summary      = "A extensions framework in iOS."
 
 s.description  = <<-DESC
@@ -79,7 +79,7 @@ s.platform     = :ios, "7.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag => "1.2.9" }
+s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag => "1.2.10" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ s.source       = { :git => "https://github.com/devedbox/AXExtensions.git", :tag 
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "AXExtensions/AXExtensions/ALAsset+Image/*.{h,m}", "AXExtensions/AXExtensions/PHAsset+Image/*.{h,m}", "AXExtensions/AXExtensions/UIImagePickerController+Authorization/*.{h,m}", "AXExtensions/AXExtensions/UINavigationBar+Separator_hidden/*.{h,m}", "AXExtensions/AXExtensions/UIToolBar+Separator_hidden/*.{h,m}", "AXExtensions/AXExtensions/UIViewController+Title/*.{h,m}", "AXExtensions/AXExtensions/UIImage+TintColor/*.{h,m}", "AXExtensions/AXExtensions/ScrollView/*.{h,m}", "AXExtensions/AXExtensions/UIView+Extension/*.{h,m}", "AXExtensions/AXExtensions/UILabel+Pop/*.{h,m}", "AXExtensions/AXExtensions/UITextView+Pop/*.{h,m}"
+s.source_files  = "AXExtensions/AXExtensions/ALAsset+Image/*.{h,m}", "AXExtensions/AXExtensions/PHAsset+Image/*.{h,m}", "AXExtensions/AXExtensions/UIImagePickerController+Authorization/*.{h,m}", "AXExtensions/AXExtensions/UINavigationBar+Separator_hidden/*.{h,m}", "AXExtensions/AXExtensions/UIToolBar+Separator_hidden/*.{h,m}", "AXExtensions/AXExtensions/UIViewController+Title/*.{h,m}", "AXExtensions/AXExtensions/UIImage+TintColor/*.{h,m}", "AXExtensions/AXExtensions/ScrollView/*.{h,m}", "AXExtensions/AXExtensions/UIView+Extension/*.{h,m}", "AXExtensions/AXExtensions/UILabel+Pop/*.{h,m}", "AXExtensions/AXExtensions/UITextView+Pop/*.{h,m}", "AXExtensions/AXExtensions/UITextField+Pop/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"

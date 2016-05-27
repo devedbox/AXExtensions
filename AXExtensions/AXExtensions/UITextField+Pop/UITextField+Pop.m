@@ -1,17 +1,16 @@
 //
-//  UILabel+Pop.m
+//  UITextField+Pop.m
 //  AXExtensions
 //
-//  Created by ai on 16/5/9.
+//  Created by ai on 16/5/27.
 //  Copyright © 2016年 AiXing. All rights reserved.
 //
 
-#import "UILabel+Pop.h"
+#import "UITextField+Pop.h"
 #import <pop/POP.h>
 #import <objc/runtime.h>
 
-@implementation UILabel(Pop)
-
+@implementation UITextField_Pop
 - (CGFloat)speed {
     return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
@@ -87,6 +86,70 @@
     nameAnim.property = nameProp;
     nameAnim.fromValue = @(0);
     nameAnim.toValue = @(attributedText.length);
+    
+    [self pop_removeAllAnimations];
+    [self pop_addAnimation:nameAnim forKey:@"counting"];
+}
+
+- (void)pop_setPlaceholder:(NSString *)placeholder {
+    NSTimeInterval duration = self.duration;
+    NSTimeInterval perSpeed = self.speed;
+    NSInteger __block count = 0;
+    
+    POPAnimatableProperty * nameProp = [POPAnimatableProperty propertyWithName:@"count" initializer:^(POPMutableAnimatableProperty *prop) {
+        // read value
+        prop.readBlock = ^(id obj, CGFloat values[]) {
+            values[0] = MIN(++count, placeholder.length);
+        };
+        // write value
+        prop.writeBlock = ^(id obj, const CGFloat values[]) {
+            [obj setPlaceholder:[placeholder substringWithRange:NSMakeRange(0, values[0])]];
+        };
+        // dynamics threshold
+        prop.threshold = 0.01;
+    }];
+    
+    if (perSpeed > 0) {
+        duration = perSpeed*placeholder.length;
+    }
+    POPBasicAnimation *nameAnim = [POPBasicAnimation animation];
+    nameAnim.duration = duration;
+    nameAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    nameAnim.property = nameProp;
+    nameAnim.fromValue = @(0);
+    nameAnim.toValue = @(placeholder.length);
+    
+    [self pop_removeAllAnimations];
+    [self pop_addAnimation:nameAnim forKey:@"counting"];
+}
+
+- (void)pop_setAttributedPlaceholder:(NSAttributedString *)attributedPlaceholder {
+    NSTimeInterval duration = self.duration;
+    NSTimeInterval perSpeed = self.speed;
+    NSInteger __block count = 0;
+    
+    POPAnimatableProperty * nameProp = [POPAnimatableProperty propertyWithName:@"count" initializer:^(POPMutableAnimatableProperty *prop) {
+        // read value
+        prop.readBlock = ^(id obj, CGFloat values[]) {
+            values[0] = MIN(++count, attributedPlaceholder.length);
+        };
+        // write value
+        prop.writeBlock = ^(id obj, const CGFloat values[]) {
+            [obj setAttributedPlaceholder:[attributedPlaceholder attributedSubstringFromRange:NSMakeRange(0, values[0])]];
+        };
+        // dynamics threshold
+        prop.threshold = 0.01;
+    }];
+    
+    if (perSpeed > 0) {
+        duration = perSpeed*attributedPlaceholder.length;
+    }
+    POPBasicAnimation *nameAnim = [POPBasicAnimation animation];
+    nameAnim.duration = duration;
+    nameAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    nameAnim.property = nameProp;
+    nameAnim.fromValue = @(0);
+    nameAnim.toValue = @(attributedPlaceholder.length);
     
     [self pop_removeAllAnimations];
     [self pop_addAnimation:nameAnim forKey:@"counting"];
