@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r9G-io-4NI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aWf-OX-0KP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -150,7 +149,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBt-kg-VV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887" y="780"/>
+            <point key="canvasLocation" x="-879" y="451"/>
         </scene>
         <!--Image-->
         <scene sceneID="qb2-vU-cvQ">
@@ -216,46 +215,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcM-hH-QcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-901" y="751"/>
-        </scene>
-        <!--Attributed Label View Controller-->
-        <scene sceneID="yOZ-kV-eVS">
-            <objects>
-                <viewController id="r9G-io-4NI" customClass="AXAttributedLabelViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dtr-5n-WEe"/>
-                        <viewControllerLayoutGuide type="bottom" id="FNa-H8-QLl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="W8T-O7-llL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="750" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pEe-Ww-WVP" customClass="AXAttributedLabel">
-                                <rect key="frame" x="30" y="236" width="540" height="237"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="attributedEnabled" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="pEe-Ww-WVP" firstAttribute="top" secondItem="dtr-5n-WEe" secondAttribute="bottom" constant="216" id="3Pr-BT-TK3"/>
-                            <constraint firstItem="FNa-H8-QLl" firstAttribute="top" secondItem="pEe-Ww-WVP" secondAttribute="bottom" constant="127" id="Aa5-h9-olE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pEe-Ww-WVP" secondAttribute="trailing" constant="10" id="EIF-kg-1pL"/>
-                            <constraint firstItem="pEe-Ww-WVP" firstAttribute="leading" secondItem="W8T-O7-llL" secondAttribute="leadingMargin" constant="10" id="beM-zU-y9h"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="pEe-Ww-WVP" id="N9P-Cx-y1J"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TWi-ns-lL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-906" y="1359"/>
+            <point key="canvasLocation" x="-990" y="722"/>
         </scene>
         <!--Item-->
         <scene sceneID="Cz4-BM-Gik">

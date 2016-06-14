@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		011122FD1CE5BAB9005651D3 /* UITextView+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */; };
-		011123051CE5DA07005651D3 /* AXAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */; };
 		0189A1E31CE05F9D00D0F0D8 /* UILabel+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */; };
 		01ABFFC61BFF1A2400EEDF8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC51BFF1A2400EEDF8C /* main.m */; };
 		01ABFFC91BFF1A2400EEDF8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */; };
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		011122FB1CE5BAB9005651D3 /* UITextView+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextView+Pop.h"; path = "UITextView+Pop/UITextView+Pop.h"; sourceTree = "<group>"; };
 		011122FC1CE5BAB9005651D3 /* UITextView+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextView+Pop.m"; path = "UITextView+Pop/UITextView+Pop.m"; sourceTree = "<group>"; };
-		011123031CE5DA07005651D3 /* AXAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXAttributedLabelViewController.h; sourceTree = "<group>"; };
-		011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXAttributedLabelViewController.m; sourceTree = "<group>"; };
 		0189A1E11CE05F9D00D0F0D8 /* UILabel+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Pop.h"; path = "UILabel+Pop/UILabel+Pop.h"; sourceTree = "<group>"; };
 		0189A1E21CE05F9D00D0F0D8 /* UILabel+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Pop.m"; path = "UILabel+Pop/UILabel+Pop.m"; sourceTree = "<group>"; };
 		01ABFFC11BFF1A2400EEDF8C /* AXExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,8 +135,6 @@
 				01ABFFC81BFF1A2400EEDF8C /* AppDelegate.m */,
 				01ABFFCA1BFF1A2400EEDF8C /* ViewController.h */,
 				01ABFFCB1BFF1A2400EEDF8C /* ViewController.m */,
-				011123031CE5DA07005651D3 /* AXAttributedLabelViewController.h */,
-				011123041CE5DA07005651D3 /* AXAttributedLabelViewController.m */,
 				01C6B74B1C92A69B00320764 /* TableViewController */,
 				01ABFFDB1BFF1AD000EEDF8C /* AXExtensions */,
 				01ABFFCD1BFF1A2400EEDF8C /* Main.storyboard */,
@@ -437,7 +432,6 @@
 				01ABFFEF1BFF1AD000EEDF8C /* PHAsset+Image.m in Sources */,
 				01C6B7441C926F9600320764 /* AXCollectionView.m in Sources */,
 				01ABFFF11BFF1AD000EEDF8C /* UINavigationBar+Separator_hidden.m in Sources */,
-				011123051CE5DA07005651D3 /* AXAttributedLabelViewController.m in Sources */,
 				01C6B74E1C92B37600320764 /* StringPlaceholderViewController.m in Sources */,
 				01E01FC41CCF5A0400529876 /* UIView+Extension.m in Sources */,
 				01ABFFF21BFF1AD000EEDF8C /* UIToolbar+Separator_hidden.m in Sources */,
